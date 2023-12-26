@@ -1,6 +1,22 @@
 GET http://localhost:3000
 
-###
-GET http://localhost:3000/api/users
+### paiimti visus shirts
+GET http://localhost:3000/api/shirts
 
-###
+### parodo 10 pigiausiu
+GET http://localhost:3000/api/shirts/order
+
+### post viena
+POST http://localhost:3000/api/shirts
+Content-Type: application/json
+
+{
+  "shirt_brand": "Doolingo",
+  "shirt_model": "Baliniai",
+  "shirt_size": "L",
+  "shirt_price": "100",
+  "shirt_discription": "Labai geri ir populiarus"
+}
+
+### parodo pagal parametra
+GET http://localhost:3000/api/shirts/order?limit=11
